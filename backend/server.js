@@ -11,7 +11,7 @@ require('dotenv').config();
 // set up server
 const server = express();
 const originUrl =
-	process.env.NODE_ENV === 'production' ? `https://lambda-outfit-creator.herokuapp.com` : `http://localhost:3000`;
+	process.env.NODE_ENV === 'production' ? `cs-9-outfit-creator-nedu.vercel.app` : `http://localhost:3000`;
 const corsOptions = {
 	origin: originUrl,
 	credentials: true,
