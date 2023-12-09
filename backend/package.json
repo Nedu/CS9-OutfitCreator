@@ -1,6 +1,6 @@
 {
 	"dependencies": {
-		"bcrypt": "^3.0.0",
+		"bcrypt": "^5.1.1",
 		"body-parser": "^1.18.3",
 		"cloudinary": "^1.11.0",
 		"cors": "^2.8.4",
@@ -28,6 +28,7 @@
 		"nodemon": "^1.18.3"
 	},
 	"scripts": {
-		"start": "nodemon server.js"
+		"dev": "nodemon server.js",
+		"start": "node server.js"
 	}
 }
