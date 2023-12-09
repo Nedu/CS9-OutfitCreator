@@ -34,12 +34,12 @@ const outfitRoutes = require('./routes/outfit-routes');
 const itemRoutes = require('./routes/item-routes');
 
 mongoose
-	.connect(process.env.DB_URI, { useNewUrlParser: true })
+	.connect(process.env.DB_URI, { useNewUrlParser: false })
 	.then(() => {
 		console.log('Connected to MongoDB');
 	})
 	.catch((err) => {
-		console.log('Error connecting to the database');
+		console.log('Error connecting to the database', err);
 	});
 
 server.get('/', (req, res) => {
